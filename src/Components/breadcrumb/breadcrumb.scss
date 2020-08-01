@@ -1,0 +1,21 @@
+.breadcrumb{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    font-size: 14px; 
+    background-color: #f6f6f6;
+    &:first-child{
+        a{
+            color: #80bd01;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        span{
+            padding: 0 5px 0 6px;
+            color: #999;
+        }
+    }
+}

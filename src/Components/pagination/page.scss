@@ -1,0 +1,104 @@
+
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select:none; 
+    margin: 20px 0;
+    .page{
+        display: flex;
+       
+        .page-active{
+            color:#1890ff;
+            border-color: #1890ff;
+        }
+        li{ 
+            min-width: 32px;
+            height: 32px;        
+            line-height: 30px;
+            margin-right: 8px;
+            cursor: pointer;
+            box-sizing: border-box;
+            color: #778087;
+            border: 1px solid #d9d9d9;
+            &:hover{
+                color: #1890ff;
+                border-color: #1890ff;
+            }
+        }
+    }
+    .next-page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        line-height: 30px;  
+        cursor: pointer;
+        color: #778087;
+        border: 1px solid #ddd;
+        transition: all 0.3s;
+        &:hover{
+            color: #1890ff;
+            border-color: #1890ff;
+        }
+        &:active{
+            color: #1890ff;
+            border-color: #1890ff;
+            background-color: #fff;
+
+        }
+    }
+    .next-pagination-disabled{
+        cursor: not-allowed;
+        color: #ddd;
+        &:hover{
+            color: #ddd;
+             border-color:#ddd;
+        }
+        &:active{
+            color: #ddd;
+             border-color:#ddd;
+        }
+    }
+    .quick-jumper{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-left: 6px;
+        input{
+            display: inline-block;
+            width: 30px;
+            height: 25px;
+            line-height: 30px;
+            margin: 0 8px;
+            padding: 0px 7px;
+            border:1px solid #d9d9d9;
+            border-radius: 2px;
+            color:rgba(0,0,0,.65);
+            font-size: 14px;
+            &:focus{
+                border: 1px solid #40a9ff;
+                box-shadow: 0 0 0 2px rgba(24,144,255,0.1);
+            }
+        }
+    }
+}
+@media (min-width: 375px) and (max-width: 975px){
+    .pagination {
+        margin: 15px 0;
+        transform: scale(1);
+        .quick-jumper{
+            display: none;
+        }
+    }
+}
+@media (max-width: 375px){
+    .pagination {
+        .quick-jumper{
+            display: none;
+        }
+    }
+}

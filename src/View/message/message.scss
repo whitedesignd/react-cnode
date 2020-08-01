@@ -1,0 +1,32 @@
+.message{
+    .msg-list{
+        background-color: #fff;
+        div{
+            padding: 7px;
+            text-align: left;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            li{
+                width: 100%;
+                padding: 5px 0;
+                border-bottom: 1px solid #e9e9e9;;
+                >div{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                
+                a {
+                    color: #08c;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+            }
+        }
+    }
+}

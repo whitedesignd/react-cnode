@@ -1,0 +1,83 @@
+#header{
+    width: 100%;
+    min-height: 50px;
+    background: #444;
+    .container{
+        width: 90%;
+        min-height: 40px;
+        line-height: 40px;
+        padding: 5px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        .pull-left{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            line-height: 40px;
+            width: auto;
+            a{
+                width: 120px;
+                padding: 0 20px;
+                img{
+                    height: auto;
+                    min-width: 100%;
+                }
+            }
+            .search-form{
+               border-radius: 10px;
+               margin: 0 5px;
+               padding: 3px 5px 3px 23px;
+               margin-left: 20px;
+               line-height: 20px;
+               transition:  all 0.5s;
+               background:url(https://static2.cnodejs.org/public/images/search.e53b380a.hashed.png) no-repeat 4px 4px #888;
+               &:hover{
+                   background-color: #fff;
+               }
+            }
+        }
+        .pull-right{
+            ul{
+                display: flex;
+                justify-content: space-around;
+                line-height: 40px;
+                flex-wrap: wrap;
+                flex:1;
+                li{
+                    a{
+                        color: #ccc;
+                        padding: 10px 15px;
+                        &:hover{
+                            color:#fff;
+                            text-shadow: 0 0px 1px #fff;
+                        }
+                    }
+                }
+               
+            }
+            
+        }
+    }
+   
+}
+@media (max-width: 979px){
+    #header {
+        height: auto!important;
+        .container {
+            flex-wrap: wrap;  
+            justify-content: center;
+            .pull-left{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .pull-right{
+                ul{
+                    &:last-child{
+                        justify-content: flex-start;
+                    }  
+                }
+            }
+        }
+    }
+}

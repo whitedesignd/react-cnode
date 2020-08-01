@@ -1,0 +1,50 @@
+.personal-no{ 
+  
+    height: auto;  
+    max-height: 150px;
+}
+.personal{
+    height: 180px;
+}
+.personal-no,.personal{
+    width: 280px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+    &::after{
+        content: '';
+        clear: both;
+        display: none;
+        height: 0;
+      }
+    .tourist{
+        color: #333;
+        font-size: 15px;
+        a{
+            color:#2d8cf0;
+        }
+    }
+    .user-personal{
+        cursor: pointer;
+        img{
+            padding: 10px 0 0 10px;
+            width: 80px;
+        }
+        p{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    p{
+        padding: 10px;
+        word-wrap: normal;
+    }
+}
+@media (max-width: 979px){
+    .personal,.personal-no{
+        display: none;
+    }
+}

@@ -1,0 +1,52 @@
+@mixin header{
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    font-size: 14px; 
+    background-color: #f6f6f6;
+}
+.user{
+    .user-info{
+        text-align: left;
+        padding: 10px;
+        background-color:#fff;
+        .user-big-avatar{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span{
+                padding: 5px;
+            }
+            img{
+                width: 50px;
+            }
+        }
+        a{
+            &:hover{
+                color:#778087;
+                text-decoration: underline;
+            }
+        }
+        div{
+            padding: 10px 0;
+        }
+    }
+    .panel{
+        margin-top: 20px;
+        background-color: #fff;
+        color: #000;
+        height: auto;
+        .header{
+            @include header;
+        }
+        .top-list{
+            .title{
+                color: #08c;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+      
+    }
+}
